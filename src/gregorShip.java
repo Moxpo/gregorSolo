@@ -1,26 +1,45 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class gregorShip {
-
     private String name;
     private String model;
-    private int maxSpeed;
+    private int naxSpeed;
     private String owner;
 
+    public String getName() {
+        return name;
+    }
 
-    public gregorShip(String name, String model, int maxSpeed, String owner) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
         this.model = model;
-        this.maxSpeed = maxSpeed;
+    }
+
+    public int getNaxSpeed() {
+        return naxSpeed;
+    }
+
+    public void setNaxSpeed(int naxSpeed) {
+        this.naxSpeed = naxSpeed;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
         this.owner = owner;
     }
 
-    public static void main(String[] args) {
-        gregorShip newShip = new gregorShip(args[0], args[1], Integer.valueOf(args[2]), args[3]);
-
-
-        System.out.println(newShip);
+    public gregorShip(String name, String model, int naxSpeed, String owner) {
+        this.name = name;
+        this.model = model;
+        this.naxSpeed = naxSpeed;
+        this.owner = owner;
     }
-
-
 }
